@@ -16,8 +16,6 @@ import {
 } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 
-import { useScrollPosition } from 'hooks';
-
 const solutions = [
   {
     name: 'Analytics',
@@ -100,15 +98,8 @@ function classNames(...classes) {
 }
 
 export const Nav = () => {
-  const scrollPosition = useScrollPosition();
-
   return (
-    <Popover
-      className={classNames(
-        scrollPosition > 0 ? 'shadow' : 'shadow-none',
-        'transition-shadow sticky top-0 bg-white'
-      )}
-    >
+    <Popover className='relative bg-white'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6'>
         <div className='flex justify-between items-center py-6 md:justify-start md:space-x-10'>
           <div className='flex justify-start lg:w-0 lg:flex-1'>
