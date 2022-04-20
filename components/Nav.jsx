@@ -99,7 +99,7 @@ function classNames(...classes) {
 
 export const Nav = () => {
   return (
-    <Popover className='relative bg-white'>
+    <Popover className='relative bg-white z-20'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6'>
         <div className='flex justify-between items-center py-6 md:justify-start md:space-x-10'>
           <div className='flex justify-start lg:w-0 lg:flex-1'>
