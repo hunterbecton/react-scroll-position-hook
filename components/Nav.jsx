@@ -106,7 +106,7 @@ export const Nav = () => {
     <Popover
       className={classNames(
         scrollPosition > 0 ? 'shadow' : 'shadow-none',
-        'transition-shadow sticky top-0 bg-white'
+        'transition-shadow sticky top-0 bg-white z-20'
       )}
     >
       <div className='max-w-7xl mx-auto px-4 sm:px-6'>
